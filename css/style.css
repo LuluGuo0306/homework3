@@ -15,7 +15,7 @@ body{
   font-family: 'Andika', sans-serif;
   background-size: cover ;
   background-position: center;
-  background-image: url("../images/pigeon-background.jpeg");
+  background-image: url("../images/pigeon-background.JPEG");
   background-color: #DDDDDD;
   background-repeat: no-repeat;
 
@@ -86,10 +86,14 @@ tr:hover{
   background: rgba(126, 8, 32, 0.25)
 }
 *{
-
 }
 
-thead tr:first-child th:first-child{}
+thead tr:first-child th:first-child{
+  border-radius: 10px 0 0 0;
+}
+thead tr:first-child th:last-child{
+  border-radius: 0 10px 0 0;
+}
 
 footer{
   width:100%;
@@ -98,5 +102,7 @@ footer{
   color: #FFFFFF;
   min-height: 75px;
   position:fixed;
+  left:0px;
+  bottom:0px;
 }
 
